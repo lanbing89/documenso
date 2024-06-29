@@ -57,7 +57,7 @@ export const BillingPortalButton = ({ buttonProps }: BillingPortalButtonProps) =
       onClick={async () => handleFetchPortalUrl()}
       loading={isFetchingPortalUrl}
     >
-      Manage Subscription
+      管理订阅
     </Button>
   );
 };

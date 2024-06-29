@@ -76,7 +76,7 @@ export const SuperDeleteDocumentDialog = ({ document }: SuperDeleteDocumentDialo
           variant="neutral"
         >
           <div>
-            <AlertTitle>Delete Document</AlertTitle>
+            <AlertTitle>删除文件</AlertTitle>
             <AlertDescription className="mr-2">
               Delete the document. This action is irreversible so proceed with caution.
             </AlertDescription>
@@ -85,12 +85,12 @@ export const SuperDeleteDocumentDialog = ({ document }: SuperDeleteDocumentDialo
           <div className="flex-shrink-0">
             <Dialog>
               <DialogTrigger asChild>
-                <Button variant="destructive">Delete Document</Button>
+                <Button variant="destructive">删除文件</Button>
               </DialogTrigger>
 
               <DialogContent>
                 <DialogHeader className="space-y-4">
-                  <DialogTitle>Delete Document</DialogTitle>
+                  <DialogTitle>删除文件</DialogTitle>
 
                   <Alert variant="destructive">
                     <AlertDescription className="selection:bg-red-100">
@@ -117,7 +117,7 @@ export const SuperDeleteDocumentDialog = ({ document }: SuperDeleteDocumentDialo
                     variant="destructive"
                     disabled={!reason}
                   >
-                    {isDeletingDocument ? 'Deleting document...' : 'Delete Document'}
+                    {isDeletingDocument ? '删除文件中...' : '删除文件'}
                   </Button>
                 </DialogFooter>
               </DialogContent>

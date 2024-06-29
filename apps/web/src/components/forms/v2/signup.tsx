@@ -480,7 +480,7 @@ export const SignUpFormV2 = ({
                   size="lg"
                   className="flex-1"
                 >
-                  Complete
+                  完成
                 </Button>
               )}
             </div>

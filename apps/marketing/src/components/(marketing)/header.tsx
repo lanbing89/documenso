@@ -69,16 +69,16 @@ export const Header = ({ className, ...props }: HeaderProps) => {
         </Link>
 
         <Link
-          href="https://app.documenso.com/signin?utm_source=marketing-header"
+          href="/signin?utm_source=marketing-header"
           target="_blank"
           className="text-muted-foreground hover:text-muted-foreground/80 text-sm font-semibold"
         >
-          Sign in
+          登录
         </Link>
 
         <Button className="rounded-full" size="sm" asChild>
-          <Link href="https://app.documenso.com/signup?utm_source=marketing-header" target="_blank">
-            Sign up
+          <Link href="/signup?utm_source=marketing-header" target="_blank">
+            注册
           </Link>
         </Button>
       </div>

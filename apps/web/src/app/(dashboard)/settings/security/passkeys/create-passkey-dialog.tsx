@@ -221,11 +221,11 @@ export const CreatePasskeyDialog = ({ trigger, onSuccess, ...props }: CreatePass
 
               <DialogFooter>
                 <Button type="button" variant="secondary" onClick={() => setOpen(false)}>
-                  Cancel
+                  取消
                 </Button>
 
                 <Button type="submit" loading={form.formState.isSubmitting}>
-                  Continue
+                  继续
                 </Button>
               </DialogFooter>
             </fieldset>

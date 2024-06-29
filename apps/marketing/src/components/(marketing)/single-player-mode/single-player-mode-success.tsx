@@ -77,7 +77,7 @@ export const SinglePlayerModeSuccess = ({
             />
 
             <Button onClick={() => setShowDocumentDialog(true)} className="z-10 col-span-2">
-              Show document
+              显示文件
             </Button>
           </div>
         </div>

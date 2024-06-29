@@ -38,7 +38,7 @@ const PDFLoader = () => (
   <>
     <Loader className="text-documenso h-12 w-12 animate-spin" />
 
-    <p className="text-muted-foreground mt-4">Loading document...</p>
+    <p className="text-muted-foreground mt-4">努力加载中...</p>
   </>
 );
 

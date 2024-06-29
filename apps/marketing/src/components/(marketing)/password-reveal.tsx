@@ -15,7 +15,7 @@ export const PasswordReveal = ({ password }: PasswordRevealProps) => {
     void copy(password).then(() => {
       toast({
         title: 'Copied to clipboard',
-        description: 'Your password has been copied to your clipboard.',
+        description: '您的密码已复制到您的剪贴板。',
       });
     });
   };

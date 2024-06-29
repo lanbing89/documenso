@@ -28,7 +28,7 @@ export const Enterprise = () => {
           className="mt-6"
           onClick={() => event('enterprise-contact')}
         >
-          <Button className="rounded-full text-base">Contact Us</Button>
+          <Button className="rounded-full text-base">联系我们</Button>
         </Link>
       </div>
     </div>

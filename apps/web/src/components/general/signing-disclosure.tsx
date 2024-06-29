@@ -9,18 +9,15 @@ export type SigningDisclosureProps = HTMLAttributes<HTMLParagraphElement>;
 export const SigningDisclosure = ({ className, ...props }: SigningDisclosureProps) => {
   return (
     <p className={cn('text-muted-foreground text-xs', className)} {...props}>
-      By proceeding with your electronic signature, you acknowledge and consent that it will be used
-      to sign the given document and holds the same legal validity as a handwritten signature. By
-      completing the electronic signing process, you affirm your understanding and acceptance of
-      these conditions.
+      我明白电子签名与手写签名具有同样的法律效力。
       <span className="mt-2 block">
-        Read the full{' '}
+        阅读全部{' '}
         <Link
           className="text-documenso-700 underline"
           href="/articles/signature-disclosure"
           target="_blank"
         >
-          signature disclosure
+          条款
         </Link>
         .
       </span>

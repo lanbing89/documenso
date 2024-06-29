@@ -42,7 +42,7 @@ export const Callout = ({ starCount }: CalloutProps) => {
         >
           Try our Free Plan
           <span className="bg-primary dark:text-background -mr-2.5 ml-2.5 rounded-full px-2 py-1.5 text-xs font-medium">
-            No Credit Card required
+            无需信用卡
           </span>
         </Button>
       </Link>

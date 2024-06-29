@@ -22,7 +22,7 @@ export const CallToAction = ({ className, utmSource = 'generic-cta' }: CallToAct
 
         <Button className="mt-8 rounded-full no-underline" size="lg" asChild>
           <Link href={`${NEXT_PUBLIC_WEBAPP_URL()}/signup?utm_source=${utmSource}`} target="_blank">
-            Get started
+            现在开始
           </Link>
         </Button>
       </CardContent>

@@ -180,7 +180,7 @@ export default async function ClaimedPlanPage({ searchParams = {} }: ClaimedPlan
 
         <Link href={`${NEXT_PUBLIC_WEBAPP_URL()}/signin`} target="_blank" className="mt-4 block">
           <Button size="lg" className="text-base">
-            Let's get started!
+            现在开始吧！
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </Link>

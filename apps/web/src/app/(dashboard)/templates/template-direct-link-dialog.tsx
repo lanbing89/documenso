@@ -391,7 +391,7 @@ export const TemplateDirectLinkDialog = ({
                     loading={isDeletingTemplateDirectLink}
                     onClick={() => setCurrentStep('CONFIRM_DELETE')}
                   >
-                    Remove
+                    移除
                   </Button>
 
                   <Button
@@ -404,7 +404,7 @@ export const TemplateDirectLinkDialog = ({
                       })
                     }
                   >
-                    Save
+                    保存
                   </Button>
                 </DialogFooter>
               </DialogContent>

@@ -191,7 +191,7 @@ export function BannerForm({ banner }: BannerFormProps) {
             loading={isUpdateSiteSettingLoading}
             className="mt-4 justify-end self-end"
           >
-            Update Banner
+            更新标语
           </Button>
         </form>
       </Form>

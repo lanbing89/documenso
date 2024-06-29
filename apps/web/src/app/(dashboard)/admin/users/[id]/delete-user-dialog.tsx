@@ -85,12 +85,12 @@ export const DeleteUserDialog = ({ className, user }: DeleteUserDialogProps) => 
         <div className="flex-shrink-0">
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="destructive">Delete Account</Button>
+              <Button variant="destructive">删除账户</Button>
             </DialogTrigger>
 
             <DialogContent>
               <DialogHeader className="space-y-4">
-                <DialogTitle>Delete Account</DialogTitle>
+                <DialogTitle>删除账户</DialogTitle>
 
                 <Alert variant="destructive">
                   <AlertDescription className="selection:bg-red-100">
@@ -119,7 +119,7 @@ export const DeleteUserDialog = ({ className, user }: DeleteUserDialogProps) => 
                   variant="destructive"
                   disabled={email !== user.email}
                 >
-                  {isDeletingUser ? 'Deleting account...' : 'Delete Account'}
+                  {isDeletingUser ? '删除账户中...' : '删除账户'}
                 </Button>
               </DialogFooter>
             </DialogContent>

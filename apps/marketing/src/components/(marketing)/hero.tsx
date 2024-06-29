@@ -106,7 +106,7 @@ export const Hero = ({ className, ...props }: HeroProps) => {
           animate="animate"
           className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-4"
         >
-          <Link href="https://app.documenso.com/signup?utm_source=marketing-hero">
+          <Link href="/signup?utm_source=marketing-hero">
             <Button
               type="button"
               variant="outline"
@@ -114,7 +114,7 @@ export const Hero = ({ className, ...props }: HeroProps) => {
             >
               Try our Free Plan
               <span className="bg-primary dark:text-background -mr-2.5 ml-2.5 rounded-full px-2 py-1.5 text-xs font-medium">
-                No Credit Card required
+                无需信用卡
               </span>
             </Button>
           </Link>

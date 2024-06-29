@@ -96,7 +96,7 @@ export const DataTableActionButton = ({ row, team }: DataTableActionButtonProps)
         <Button className="w-32" asChild>
           <Link href={`${documentsPath}/${row.id}/edit`}>
             <Edit className="-ml-1 mr-2 h-4 w-4" />
-            Edit
+            编辑
           </Link>
         </Button>
       ),
@@ -108,19 +108,19 @@ export const DataTableActionButton = ({ row, team }: DataTableActionButtonProps)
             .with(RecipientRole.SIGNER, () => (
               <>
                 <Pencil className="-ml-1 mr-2 h-4 w-4" />
-                Sign
+                签署
               </>
             ))
             .with(RecipientRole.APPROVER, () => (
               <>
                 <CheckCircle className="-ml-1 mr-2 h-4 w-4" />
-                Approve
+                确认
               </>
             ))
             .otherwise(() => (
               <>
                 <EyeIcon className="-ml-1 mr-2 h-4 w-4" />
-                View
+                查看
               </>
             ))}
         </Link>

@@ -132,7 +132,7 @@ export default function UserPage({ params }: { params: { id: number } }) {
 
             <div className="mt-4">
               <Button type="submit" loading={form.formState.isSubmitting}>
-                Update user
+                更新用户
               </Button>
             </div>
           </fieldset>

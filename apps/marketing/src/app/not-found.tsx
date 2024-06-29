@@ -50,11 +50,11 @@ export default function NotFound() {
               }}
             >
               <ChevronLeft className="mr-2 h-4 w-4" />
-              Go Back
+              返回
             </Button>
 
             <Button className="w-32" asChild>
-              <Link href="/">Home</Link>
+              <Link href="/">首页</Link>
             </Button>
           </div>
         </div>

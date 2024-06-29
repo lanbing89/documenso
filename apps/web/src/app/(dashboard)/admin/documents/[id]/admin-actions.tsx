@@ -54,7 +54,7 @@ export const AdminActions = ({ className, document, recipients }: AdminActionsPr
               )}
               onClick={() => resealDocument({ id: document.id })}
             >
-              Reseal document
+              重新签署文件
             </Button>
           </TooltipTrigger>
 
@@ -66,7 +66,7 @@ export const AdminActions = ({ className, document, recipients }: AdminActionsPr
       </TooltipProvider>
 
       <Button variant="outline" asChild>
-        <Link href={`/admin/users/${document.userId}`}>Go to owner</Link>
+        <Link href={`/admin/users/${document.userId}`}>切换到开发者</Link>
       </Button>
     </div>
   );

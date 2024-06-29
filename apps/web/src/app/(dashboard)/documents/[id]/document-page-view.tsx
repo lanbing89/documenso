@@ -146,7 +146,7 @@ export const DocumentPageView = async ({ params, team }: DocumentPageViewProps) 
             <DocumentHistorySheet documentId={document.id} userId={user.id}>
               <Button variant="outline">
                 <Clock9 className="mr-1.5 h-4 w-4" />
-                Document history
+                历史文件
               </Button>
             </DocumentHistorySheet>
           </div>

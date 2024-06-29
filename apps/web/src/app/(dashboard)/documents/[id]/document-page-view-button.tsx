@@ -77,19 +77,19 @@ export const DocumentPageViewButton = ({ document, team }: DocumentPageViewButto
             .with(RecipientRole.SIGNER, () => (
               <>
                 <Pencil className="-ml-1 mr-2 h-4 w-4" />
-                Sign
+                签署
               </>
             ))
             .with(RecipientRole.APPROVER, () => (
               <>
                 <CheckCircle className="-ml-1 mr-2 h-4 w-4" />
-                Approve
+                确认
               </>
             ))
             .otherwise(() => (
               <>
                 <EyeIcon className="-ml-1 mr-2 h-4 w-4" />
-                View
+                查看
               </>
             ))}
         </Link>
@@ -103,7 +103,7 @@ export const DocumentPageViewButton = ({ document, team }: DocumentPageViewButto
     .with({ isComplete: true }, () => (
       <Button className="w-full" onClick={onDownloadClick}>
         <Download className="-ml-1 mr-2 inline h-4 w-4" />
-        Download
+        下载
       </Button>
     ))
     .otherwise(() => null);

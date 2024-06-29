@@ -178,12 +178,12 @@ export const ResendDocumentActionItem = ({
                 variant="secondary"
                 disabled={isSubmitting}
               >
-                Cancel
+                取消
               </Button>
             </DialogClose>
 
             <Button className="flex-1" loading={isSubmitting} type="submit" form={FORM_ID}>
-              Send reminder
+              发送提醒
             </Button>
           </div>
         </DialogFooter>

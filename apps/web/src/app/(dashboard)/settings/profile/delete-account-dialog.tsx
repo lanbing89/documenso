@@ -74,7 +74,7 @@ export const DeleteAccountDialog = ({ className, user }: DeleteAccountDialogProp
         variant="neutral"
       >
         <div>
-          <AlertTitle>Delete Account</AlertTitle>
+          <AlertTitle>删除账户</AlertTitle>
           <AlertDescription className="mr-2">
             Delete your account and all its contents, including completed documents. This action is
             irreversible and will cancel your subscription, so proceed with caution.
@@ -84,12 +84,12 @@ export const DeleteAccountDialog = ({ className, user }: DeleteAccountDialogProp
         <div className="flex-shrink-0">
           <Dialog onOpenChange={() => setEnteredEmail('')}>
             <DialogTrigger asChild>
-              <Button variant="destructive">Delete Account</Button>
+              <Button variant="destructive">删除账户</Button>
             </DialogTrigger>
 
             <DialogContent>
               <DialogHeader className="space-y-4">
-                <DialogTitle>Delete Account</DialogTitle>
+                <DialogTitle>删除账户</DialogTitle>
 
                 <Alert variant="destructive">
                   <AlertDescription className="selection:bg-red-100">
@@ -136,7 +136,7 @@ export const DeleteAccountDialog = ({ className, user }: DeleteAccountDialogProp
                   variant="destructive"
                   disabled={hasTwoFactorAuthentication || enteredEmail !== user.email}
                 >
-                  {isDeletingAccount ? 'Deleting account...' : 'Confirm Deletion'}
+                  {isDeletingAccount ? '账户删除...' : '确认删除？'}
                 </Button>
               </DialogFooter>
             </DialogContent>

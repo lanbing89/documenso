@@ -33,7 +33,7 @@ export const AdminNav = ({ className, ...props }: AdminNavProps) => {
       >
         <Link href="/admin/stats">
           <BarChart3 className="mr-2 h-5 w-5" />
-          Stats
+          星标
         </Link>
       </Button>
 
@@ -47,7 +47,7 @@ export const AdminNav = ({ className, ...props }: AdminNavProps) => {
       >
         <Link href="/admin/users">
           <User2 className="mr-2 h-5 w-5" />
-          Users
+          用户
         </Link>
       </Button>
 
@@ -61,7 +61,7 @@ export const AdminNav = ({ className, ...props }: AdminNavProps) => {
       >
         <Link href="/admin/documents">
           <FileStack className="mr-2 h-5 w-5" />
-          Documents
+          文件
         </Link>
       </Button>
 
@@ -75,7 +75,7 @@ export const AdminNav = ({ className, ...props }: AdminNavProps) => {
       >
         <Link href="/admin/subscriptions">
           <Wallet2 className="mr-2 h-5 w-5" />
-          Subscriptions
+          订阅
         </Link>
       </Button>
 
@@ -89,7 +89,7 @@ export const AdminNav = ({ className, ...props }: AdminNavProps) => {
       >
         <Link href="/admin/site-settings">
           <Settings className="mr-2 h-5 w-5" />
-          Site Settings
+          标题设置
         </Link>
       </Button>
     </div>

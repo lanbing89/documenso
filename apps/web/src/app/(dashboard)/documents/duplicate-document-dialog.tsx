@@ -81,7 +81,7 @@ export const DuplicateDocumentDialog = ({
         {!documentData || isLoading ? (
           <div className="mx-auto -mt-4 flex w-full max-w-screen-xl flex-col px-4 md:px-8">
             <h1 className="mt-4 grow-0 truncate text-2xl font-semibold md:text-3xl">
-              Loading Document...
+              努力加载中...
             </h1>
           </div>
         ) : (
@@ -98,7 +98,7 @@ export const DuplicateDocumentDialog = ({
               onClick={() => onOpenChange(false)}
               className="flex-1"
             >
-              Cancel
+              取消
             </Button>
 
             <Button
@@ -108,7 +108,7 @@ export const DuplicateDocumentDialog = ({
               onClick={onDuplicate}
               className="flex-1"
             >
-              Duplicate
+              复制
             </Button>
           </div>
         </DialogFooter>

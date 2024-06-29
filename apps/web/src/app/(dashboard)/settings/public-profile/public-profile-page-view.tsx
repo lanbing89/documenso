@@ -194,7 +194,7 @@ export const PublicProfilePageView = ({ user, team, profile }: PublicProfilePage
         >
           <ManagePublicTemplateDialog
             directTemplates={enabledPrivateDirectTemplates}
-            trigger={<Button variant="outline">Link template</Button>}
+            trigger={<Button variant="outline">查看模板</Button>}
           />
         </SettingsHeader>
 

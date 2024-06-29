@@ -131,7 +131,7 @@ export const UsersDataTable = ({
                 <Button className="w-24" asChild>
                   <Link href={`/admin/users/${row.original.id}`}>
                     <Edit className="-ml-1 mr-2 h-4 w-4" />
-                    Edit
+                    编辑
                   </Link>
                 </Button>
               );

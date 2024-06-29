@@ -152,7 +152,7 @@ export const DeleteDocumentDialog = ({
 
         <DialogFooter>
           <Button type="button" variant="secondary" onClick={() => onOpenChange(false)}>
-            Cancel
+            取消
           </Button>
 
           <Button

@@ -88,7 +88,7 @@ export const PricingTable = ({ className, ...props }: PricingTableProps) => {
               target="_blank"
               className="mt-6"
             >
-              Signup Now
+              现在注册
             </Link>
           </Button>
 

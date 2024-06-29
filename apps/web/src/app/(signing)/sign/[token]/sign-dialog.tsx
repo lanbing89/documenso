@@ -53,36 +53,36 @@ export const SignDialog = ({
           onClick={fieldsValidated}
           loading={isSubmitting}
         >
-          {isComplete ? 'Complete' : 'Next field'}
+          {isComplete ? '完成' : '下一步'}
         </Button>
       </DialogTrigger>
 
       <DialogContent>
         <DialogTitle>
           <div className="text-foreground text-xl font-semibold">
-            {role === RecipientRole.VIEWER && 'Complete Viewing'}
-            {role === RecipientRole.SIGNER && 'Complete Signing'}
-            {role === RecipientRole.APPROVER && 'Complete Approval'}
+            {role === RecipientRole.VIEWER && '已完成查看'}
+            {role === RecipientRole.SIGNER && '已完成签署'}
+            {role === RecipientRole.APPROVER && '已完成确认'}
           </div>
         </DialogTitle>
 
         <div className="text-muted-foreground max-w-[50ch]">
           {role === RecipientRole.VIEWER && (
             <span>
-              You are about to complete viewing "{truncatedTitle}".
-              <br /> Are you sure?
+              请确认已完成查看 "{truncatedTitle}".
+              <br /> 确定?
             </span>
           )}
           {role === RecipientRole.SIGNER && (
             <span>
-              You are about to complete signing "{truncatedTitle}".
-              <br /> Are you sure?
+              请确认已完成签署 "{truncatedTitle}".
+              <br /> 确定?
             </span>
           )}
           {role === RecipientRole.APPROVER && (
             <span>
-              You are about to complete approving "{truncatedTitle}".
-              <br /> Are you sure?
+              请确认已完成确认 "{truncatedTitle}".
+              <br /> 确定?
             </span>
           )}
         </div>
@@ -99,7 +99,7 @@ export const SignDialog = ({
                 setShowDialog(false);
               }}
             >
-              Cancel
+              取消
             </Button>
 
             <Button
@@ -109,9 +109,9 @@ export const SignDialog = ({
               loading={isSubmitting}
               onClick={onSignatureComplete}
             >
-              {role === RecipientRole.VIEWER && 'Mark as Viewed'}
-              {role === RecipientRole.SIGNER && 'Sign'}
-              {role === RecipientRole.APPROVER && 'Approve'}
+              {role === RecipientRole.VIEWER && '标记为已查看'}
+              {role === RecipientRole.SIGNER && '签署'}
+              {role === RecipientRole.APPROVER && '确认'}
             </Button>
           </div>
         </DialogFooter>

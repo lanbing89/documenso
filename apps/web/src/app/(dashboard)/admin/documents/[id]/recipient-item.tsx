@@ -122,7 +122,7 @@ export const RecipientItem = ({ recipient }: RecipientItemProps) => {
 
             <div>
               <Button type="submit" loading={form.formState.isSubmitting}>
-                Update Recipient
+                更新收件人
               </Button>
             </div>
           </fieldset>
