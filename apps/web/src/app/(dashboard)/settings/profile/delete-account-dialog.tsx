@@ -76,8 +76,7 @@ export const DeleteAccountDialog = ({ className, user }: DeleteAccountDialogProp
         <div>
           <AlertTitle>删除账户</AlertTitle>
           <AlertDescription className="mr-2">
-            Delete your account and all its contents, including completed documents. This action is
-            irreversible and will cancel your subscription, so proceed with caution.
+            删除您的帐户及其所有内容，包括已完成的文档。此操作是不可逆的，将取消您的订阅，因此请谨慎操作。
           </AlertDescription>
         </div>
 

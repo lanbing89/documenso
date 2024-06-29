@@ -216,7 +216,7 @@ export const SignDirectTemplateForm = ({
         <div className="-mx-2 flex flex-1 flex-col gap-4 overflow-y-auto px-2">
           <div className="flex flex-1 flex-col gap-y-4">
             <div>
-              <Label htmlFor="full-name">Full Name</Label>
+              <Label htmlFor="full-name">名称</Label>
 
               <Input
                 id="full-name"
@@ -226,7 +226,7 @@ export const SignDirectTemplateForm = ({
             </div>
 
             <div>
-              <Label htmlFor="Signature">Signature</Label>
+              <Label htmlFor="Signature">签名</Label>
 
               <Card className="mt-2" gradient degrees={-120}>
                 <CardContent className="p-0">
@@ -260,7 +260,7 @@ export const SignDirectTemplateForm = ({
             disabled={isSubmitting}
             onClick={previousStep}
           >
-            Back
+            返回
           </Button>
 
           <SignDialog

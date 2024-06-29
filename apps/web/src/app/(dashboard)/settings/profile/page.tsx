@@ -17,7 +17,7 @@ export default async function ProfileSettingsPage() {
 
   return (
     <div>
-      <SettingsHeader title="Profile" subtitle="Here you can edit your personal details." />
+      <SettingsHeader title="资料" subtitle="在这里你可以编辑你的个人信息。" />
 
       <AvatarImageForm className="mb-8 max-w-xl" user={user} />
       <ProfileForm className="mb-8 max-w-xl" user={user} />

@@ -170,7 +170,7 @@ export const ApiTokenForm = ({ className, teamId }: ApiTokenFormProps) => {
                       <FormControl className="flex-1">
                         <Select onValueChange={field.onChange} disabled={noExpirationDate}>
                           <SelectTrigger className="w-full">
-                            <SelectValue placeholder="Choose..." />
+                            <SelectValue placeholder="选择..." />
                           </SelectTrigger>
                           <SelectContent>
                             {Object.entries(EXPIRATION_DATES).map(([key, date]) => (

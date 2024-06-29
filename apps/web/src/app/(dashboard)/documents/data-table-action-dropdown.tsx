@@ -111,7 +111,7 @@ export const DataTableActionDropdown = ({ row, team }: DataTableActionDropdownPr
       </DropdownMenuTrigger>
 
       <DropdownMenuContent className="w-52" align="start" forceMount>
-        <DropdownMenuLabel>Action</DropdownMenuLabel>
+        <DropdownMenuLabel>操作</DropdownMenuLabel>
 
         {!isDraft && recipient && recipient?.role !== RecipientRole.CC && (
           <DropdownMenuItem disabled={!recipient || isComplete} asChild>
@@ -119,21 +119,21 @@ export const DataTableActionDropdown = ({ row, team }: DataTableActionDropdownPr
               {recipient?.role === RecipientRole.VIEWER && (
                 <>
                   <EyeIcon className="mr-2 h-4 w-4" />
-                  View
+                  查看
                 </>
               )}
 
               {recipient?.role === RecipientRole.SIGNER && (
                 <>
                   <Pencil className="mr-2 h-4 w-4" />
-                  Sign
+                  签署
                 </>
               )}
 
               {recipient?.role === RecipientRole.APPROVER && (
                 <>
                   <CheckCircle className="mr-2 h-4 w-4" />
-                  Approve
+                  确认
                 </>
               )}
             </Link>
@@ -143,18 +143,18 @@ export const DataTableActionDropdown = ({ row, team }: DataTableActionDropdownPr
         <DropdownMenuItem disabled={!canManageDocument || isComplete} asChild>
           <Link href={`${documentsPath}/${row.id}/edit`}>
             <Edit className="mr-2 h-4 w-4" />
-            Edit
+            编辑
           </Link>
         </DropdownMenuItem>
 
         <DropdownMenuItem disabled={!isComplete} onClick={onDownloadClick}>
           <Download className="mr-2 h-4 w-4" />
-          Download
+          下载
         </DropdownMenuItem>
 
         <DropdownMenuItem onClick={() => setDuplicateDialogOpen(true)}>
           <Copy className="mr-2 h-4 w-4" />
-          Duplicate
+          复制
         </DropdownMenuItem>
 
         {/* No point displaying this if there's no functionality. */}
@@ -171,7 +171,7 @@ export const DataTableActionDropdown = ({ row, team }: DataTableActionDropdownPr
           {canManageDocument ? 'Delete' : 'Hide'}
         </DropdownMenuItem>
 
-        <DropdownMenuLabel>Share</DropdownMenuLabel>
+        <DropdownMenuLabel>分享</DropdownMenuLabel>
 
         <ResendDocumentActionItem document={row} recipients={nonSignedRecipients} team={team} />
 
@@ -182,7 +182,7 @@ export const DataTableActionDropdown = ({ row, team }: DataTableActionDropdownPr
             <DropdownMenuItem disabled={disabled || isDraft} onSelect={(e) => e.preventDefault()}>
               <div className="flex items-center">
                 {loading ? <Loader className="mr-2 h-4 w-4" /> : <Share className="mr-2 h-4 w-4" />}
-                Share Signing Card
+                分享签名卡片
               </div>
             </DropdownMenuItem>
           )}

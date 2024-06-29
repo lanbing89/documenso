@@ -166,17 +166,17 @@ export const EnableAuthenticatorAppDialog = ({ onSuccess }: EnableAuthenticatorA
 
                 <DialogFooter className="mt-4">
                   <DialogClose asChild>
-                    <Button variant="secondary">Close</Button>
+                    <Button variant="secondary">关闭</Button>
                   </DialogClose>
 
-                  <Button onClick={downloadRecoveryCodes}>Download</Button>
+                  <Button onClick={downloadRecoveryCodes}>下载</Button>
                 </DialogFooter>
               </div>
             ) : (
               <Form {...enable2FAForm}>
                 <form onSubmit={enable2FAForm.handleSubmit(onEnable2FAFormSubmit)}>
                   <DialogHeader>
-                    <DialogTitle>Enable Authenticator App</DialogTitle>
+                    <DialogTitle>启用两步验证</DialogTitle>
                     <DialogDescription>
                       To enable two-factor authentication, scan the following QR code using your
                       authenticator app.

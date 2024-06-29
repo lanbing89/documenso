@@ -14,7 +14,9 @@ export const TemplateDocumentSelfSigned = ({
 }: TemplateDocumentSelfSignedProps) => {
   const NEXT_PUBLIC_WEBAPP_URL = env('NEXT_PUBLIC_WEBAPP_URL');
 
-  const signUpUrl = `${NEXT_PUBLIC_WEBAPP_URL ?? 'http://localhost:3000'}/signup`;
+  const signUpUrl = `${
+    NEXT_PUBLIC_WEBAPP_URL ?? 'https://3000-documenso-documenso-3acih8r2z6o.ws-us114.gitpod.io/'
+  }/signup`;
 
   const getAssetUrl = (path: string) => {
     return new URL(path, assetBaseUrl).toString();

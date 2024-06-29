@@ -66,8 +66,8 @@ export const ProfileForm = ({ className, user }: ProfileFormProps) => {
       });
 
       toast({
-        title: 'Profile updated',
-        description: 'Your profile has been updated successfully.',
+        title: '更新完成',
+        description: '您的个人资料已经更新成功.',
         duration: 5000,
       });
 
@@ -102,7 +102,7 @@ export const ProfileForm = ({ className, user }: ProfileFormProps) => {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Full Name</FormLabel>
+                <FormLabel>名称</FormLabel>
                 <FormControl>
                   <Input type="text" {...field} />
                 </FormControl>
@@ -113,7 +113,7 @@ export const ProfileForm = ({ className, user }: ProfileFormProps) => {
 
           <div>
             <Label htmlFor="email" className="text-muted-foreground">
-              Email
+              电子邮箱
             </Label>
             <Input id="email" type="email" className="bg-muted mt-2" value={user.email} disabled />
           </div>
@@ -122,7 +122,7 @@ export const ProfileForm = ({ className, user }: ProfileFormProps) => {
             name="signature"
             render={({ field: { onChange } }) => (
               <FormItem>
-                <FormLabel>Signature</FormLabel>
+                <FormLabel>签字</FormLabel>
                 <FormControl>
                   <SignaturePad
                     className="h-44 w-full"
@@ -139,7 +139,7 @@ export const ProfileForm = ({ className, user }: ProfileFormProps) => {
         </fieldset>
 
         <Button type="submit" loading={isSubmitting} className="self-end">
-          {isSubmitting ? 'Updating profile...' : 'Update profile'}
+          {isSubmitting ? '资料更新中...' : '更新资料'}
         </Button>
       </form>
     </Form>

@@ -91,10 +91,10 @@ export const ViewRecoveryCodesDialog = () => {
 
             <DialogFooter className="mt-4">
               <DialogClose asChild>
-                <Button variant="secondary">Close</Button>
+                <Button variant="secondary">关闭</Button>
               </DialogClose>
 
-              <Button onClick={downloadRecoveryCodes}>Download</Button>
+              <Button onClick={downloadRecoveryCodes}>下载</Button>
             </DialogFooter>
           </div>
         ) : (

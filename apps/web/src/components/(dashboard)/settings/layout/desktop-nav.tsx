@@ -32,7 +32,7 @@ export const DesktopNav = ({ className, ...props }: DesktopNavProps) => {
           )}
         >
           <User className="mr-2 h-5 w-5" />
-          Profile
+          个人资料
         </Button>
       </Link>
 
@@ -46,7 +46,7 @@ export const DesktopNav = ({ className, ...props }: DesktopNavProps) => {
             )}
           >
             <Globe2Icon className="mr-2 h-5 w-5" />
-            Public Profile
+            公开资料
           </Button>
         </Link>
       )}
@@ -60,7 +60,7 @@ export const DesktopNav = ({ className, ...props }: DesktopNavProps) => {
           )}
         >
           <Users className="mr-2 h-5 w-5" />
-          Teams
+          团队管理
         </Button>
       </Link>
 
@@ -73,7 +73,7 @@ export const DesktopNav = ({ className, ...props }: DesktopNavProps) => {
           )}
         >
           <Lock className="mr-2 h-5 w-5" />
-          Security
+          安全设置
         </Button>
       </Link>
 
@@ -86,7 +86,7 @@ export const DesktopNav = ({ className, ...props }: DesktopNavProps) => {
           )}
         >
           <Braces className="mr-2 h-5 w-5" />
-          API Tokens
+          API接口
         </Button>
       </Link>
 
@@ -113,7 +113,7 @@ export const DesktopNav = ({ className, ...props }: DesktopNavProps) => {
             )}
           >
             <CreditCard className="mr-2 h-5 w-5" />
-            Billing
+            财务
           </Button>
         </Link>
       )}

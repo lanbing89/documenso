@@ -26,7 +26,8 @@ export const getPresignPostUrl = async (fileName: string, contentType: string) =
   let token: JWT | null = null;
 
   try {
-    const baseUrl = APP_BASE_URL() ?? 'http://localhost:3000';
+    const baseUrl =
+      APP_BASE_URL() ?? 'https://3000-documenso-documenso-3acih8r2z6o.ws-us114.gitpod.io';
 
     token = await getToken({
       req: new NextRequest(baseUrl, {

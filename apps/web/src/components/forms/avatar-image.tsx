@@ -136,7 +136,7 @@ export const AvatarImageForm = ({ className, user, team }: AvatarImageFormProps)
             name="bytes"
             render={() => (
               <FormItem>
-                <FormLabel>Avatar</FormLabel>
+                <FormLabel>头像</FormLabel>
 
                 <FormControl>
                   <div className="flex items-center gap-8">
@@ -159,7 +159,7 @@ export const AvatarImageForm = ({ className, user, team }: AvatarImageFormProps)
                           disabled={form.formState.isSubmitting}
                           onClick={() => void onFormSubmit({ bytes: null })}
                         >
-                          Remove
+                          移除
                         </button>
                       )}
                     </div>
@@ -172,7 +172,7 @@ export const AvatarImageForm = ({ className, user, team }: AvatarImageFormProps)
                       loading={form.formState.isSubmitting}
                       disabled={form.formState.isSubmitting}
                     >
-                      Upload Avatar
+                      上传头像
                       <input {...getInputProps()} />
                     </Button>
                   </div>

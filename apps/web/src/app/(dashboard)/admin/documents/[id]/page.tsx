@@ -35,17 +35,17 @@ export default async function AdminDocumentDetailsPage({ params }: AdminDocument
 
         {document.deletedAt && (
           <Badge size="large" variant="destructive">
-            Deleted
+            已删除
           </Badge>
         )}
       </div>
 
       <div className="text-muted-foreground mt-4 text-sm">
         <div>
-          Created on: <LocaleDate date={document.createdAt} format={DateTime.DATETIME_MED} />
+          创建于: <LocaleDate date={document.createdAt} format={DateTime.DATETIME_MED} />
         </div>
         <div>
-          Last updated at: <LocaleDate date={document.updatedAt} format={DateTime.DATETIME_MED} />
+          最近更新: <LocaleDate date={document.updatedAt} format={DateTime.DATETIME_MED} />
         </div>
       </div>
 
